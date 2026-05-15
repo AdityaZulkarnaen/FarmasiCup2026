@@ -5,9 +5,10 @@ import cupi from '../../public/webp/cupihero.webp'
 import Image from 'next/image'
 import gunungl from '../../public/webp/gunungl.webp'
 import gunungr from '../../public/webp/gunungr.webp'
-import frame2 from '../../public/webp/Frame2.png'
+import frame2 from '../../public/webp/Frame2.svg'
 import bintang1 from '../../public/webp/bintang1.webp'
 import bintang2 from '../../public/webp/bintang2.webp'
+import roket from '../../public/webp/roket.svg'
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
         <Image src={cupi} width={420} alt="Cupi" className='absolute top-28 right-[5%] z-999 rotate-15 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-28 max-sm:w-[140px] max-sm:top-32 max-sm:top-90 max-sm:right-0' />
         <Image src={gunungl} width={350} alt="Gunung Kiri" className='absolute bottom-20 left-0 z-1 max-lg:h-auto max-lg:w-[220px] max-sm:w-[180px] max-sm:top-32' />
         <Image src={gunungr} width={350} alt="Gunung Kanan" className='absolute bottom-22 right-0 z-1 max-lg:h-auto max-lg:w-[220px] max-sm:w-[180px] max-sm:top-32' />
-        <Image src={frame2} alt="Frame 2" className='absolute bottom-[-240%] z-10 w-screen max-sm:bottom-[-50%] max-sm:w-full max-sm:h-full' />
+        <Image src={frame2} alt="Frame 2" className='absolute bottom-[-240%] z-10 w-screen max-sm:bottom-[-55%] max-sm:scale-[200%] max-sm:w-auto ' />
         <Image src={bintang1} alt="Bintang 1" className='absolute top-10 left-10 z-999 blur-[1px] max-sm:scale-75' />
         <Image src={bintang1} alt="Bintang 1" className='absolute top-0 left-[30%] z-999 blur-[1px] scale-[500%] max-lg:scale-[300%] max-sm:scale-[180%]' />
         <Image src={bintang1} alt="Bintang 1" className='absolute top-[29%] left-[1%] z-999 blur-[1px] scale-[300%] max-lg:scale-[200%] max-sm:scale-100' />
@@ -27,6 +28,7 @@ const Hero = () => {
         <Image src={bintang1} alt="Bintang 1" className='absolute top-[16%] right-[20%] z-999 blur-[2px] max-sm:scale-75' />
         <Image src={bintang2} alt="Bintang 2" className='absolute bottom-[12%] right-[8%] z-999 blur-[2px] max-sm:scale-75' />
         <Image src={bintang2} alt="Bintang 2" className='absolute bottom-[4%] right-[38%] z-999 blur-[5px] scale-40 max-sm:scale-[25%]' />
+        <Image src={roket} alt="Roket" className='absolute bottom-[-60%] left-[34%] z-999 max-sm:scale-45 max-sm:left-[2%] max-sm:bottom-[-10%]' />
     </div>
   )
 }
