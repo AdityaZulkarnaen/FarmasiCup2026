@@ -37,7 +37,7 @@ const Futsal = () => {
       <Image
         src={Futarion}
         alt="Futarion"
-        className='absolute left-[-10%] top-[2%] z-10 w-[600px] h-auto max-sm:w-[200px] max-sm:top-[6%]'
+        className='absolute left-[-10%] top-[2%] z-10 w-[600px] h-auto max-lg:w-[320px] max-lg:left-[-6%] max-sm:w-[200px] max-sm:left-[-10%] max-sm:top-[6%]'
       /> 
 
       {/* full-width ground the boy stands on */}
