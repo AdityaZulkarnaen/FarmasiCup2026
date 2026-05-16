@@ -6,6 +6,7 @@ import gunungfutsal from '../../public/webp/gunungfutsal.webp'
 import futsalplatform from '../../public/webp/futsalplatform.svg'
 import bintang1 from '../../public/webp/bintang1.webp'
 import bintang2 from '../../public/webp/bintang2.webp'
+import pin from '../../public/webp/pin.webp'
 
 const Futsal = () => {
   return (
@@ -30,32 +31,32 @@ const Futsal = () => {
       <Image
         src={gunungfutsal}
         alt="Gunung Futsal"
-        className='absolute bottom-0 right-0 z-10 w-[520px] h-auto max-lg:w-[360px] max-sm:w-[230px] max-sm:top-[8%] max-sm:right-[-8%]'
+        className='absolute bottom-[38%] right-0 z-10 w-[520px] h-auto max-lg:w-[360px] max-lg:top-[6%] max-lg:right-[-2%] max-sm:w-[230px] max-sm:top-[10%] max-sm:right-[-4%] max-lg:scale-110'
       />
 
       {/* planet — top left */}
       <Image
         src={Futarion}
         alt="Futarion"
-        className='absolute left-[-10%] top-[2%] z-10 w-[600px] h-auto max-lg:w-[320px] max-lg:left-[-6%] max-sm:w-[200px] max-sm:left-[-10%] max-sm:top-[6%]'
+        className='absolute left-[-10%] top-[2%] z-10 w-[600px] h-auto max-lg:w-[320px] max-lg:left-[-6%] max-lg:top-[2%] max-sm:w-[200px] max-sm:left-[-10%] max-sm:top-[6%]'
       /> 
 
       {/* full-width ground the boy stands on */}
       <Image
         src={futsalplatform}
         alt="Futsal Platform"
-        className='absolute bottom-[-80%] left-0 z-10 w-screen h-auto max-sm:top-[50%] max-sm:scale-180'
+        className='absolute bottom-[34%] translate-y-[70%] left-0 z-10 w-screen h-auto max-sm:top-[30%] max-sm:scale-180 max-lg:top-[16%] max-lg:scale-120'
       />
 
-      {/* boy — stands on the platform, in front of the mountain */}
+      {/* boy */}
       <Image
         src={boyfutsal}
         alt="Boy Futsal"
-        className='absolute bottom-[4%] right-[8%] z-20 w-[320px] h-auto max-lg:w-[210px] max-sm:w-[140px] max-sm:top-[20%] max-sm:right-[-10%] -scale-x-100 '
+        className='absolute bottom-[38%] right-[8%] z-20 w-[320px] h-auto max-lg:w-[210px] max-lg:top-[12%] max-lg:right-[2%] max-sm:w-[140px] max-sm:top-[20%] max-sm:right-[-10%] -scale-x-100 '
       />
 
       {/* center content column */}
-      <div className='relative z-20 flex min-h-screen flex-col items-center justify-center max-sm:justify-start gap-6 px-6 max-sm:gap-4 max-sm:px-4'>
+      <div className='relative z-20 flex min-h-screen flex-col items-center justify-start gap-6 px-6 pt-20 max-sm:gap-4 max-sm:px-4 max-sm:pt-12'>
         {/* FUTSAL COMPETITION card */}
         <div className='flex w-full max-w-[460px] items-center justify-center rounded-[4rem] bg-gradient-to-b from-[#681F95] to-[#D899FF] px-12 py-8 backdrop-blur-md border-[0.5px] border-[#D899FF] max-sm:max-w-[300px] max-sm:rounded-3xl max-sm:px-6 max-sm:py-5'>
           <h2 className='text-center text-5xl font-extrabold leading-tight tracking-wide text-white max-lg:text-4xl max-sm:text-2xl'>
@@ -65,9 +66,7 @@ const Futsal = () => {
 
         {/* LOKASI pill */}
         <div className='flex w-full max-w-[460px] items-center justify-center gap-2 rounded-full border border-white/30 bg-white/5 px-10 py-4 backdrop-blur-sm max-sm:max-w-[300px] max-sm:py-3'>
-          <svg viewBox='0 0 24 24' className='h-7 w-7 text-white max-sm:h-5 max-sm:w-5' fill='currentColor'>
-            <path d='M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z' />
-          </svg>
+          <Image src={pin} alt="Pin" className='h-10 w-auto text-white' />
           <span className='text-3xl font-bold tracking-wide text-white max-lg:text-2xl max-sm:text-lg'>LOKASI</span>
         </div>
 
@@ -81,6 +80,31 @@ const Futsal = () => {
               </span>
             </div>
           ))}
+        </div>
+
+        {/* guidebook + register */}
+        <div className='mt-4 flex w-full max-w-[920px] items-center justify-center gap-10 max-sm:flex-col max-sm:gap-6'>
+          <div className='relative w-full max-w-[520px] rounded-[22px] border border-white/20 bg-[#B96ACF]/30 p-4 shadow-[0_0_40px_rgba(185,106,207,0.45)] backdrop-blur-md max-sm:max-w-[300px]'>
+            <div className='relative h-[400px] overflow-hidden rounded-[16px] bg-white/20 max-lg:h-[320px] max-sm:h-[160px]'>
+              <iframe
+                title='Guidebook Futsal'
+                src='https://drive.google.com/file/d/1b_zmhn-x_OLlnNsftM5npZLtkueJhfEp/preview'
+                className='h-full w-full max-sm:h-[118%] max-sm:w-[118%] max-sm:origin-top-left max-sm:scale-[0.85]'
+                allow='autoplay'
+              />
+            </div>
+          </div>
+
+          <a
+            href='https://bit.ly/REGISTRASI-FARMASICUP-2026'
+            target='_blank'
+            rel='noreferrer'
+            className='relative rounded-[16px] border border-white/20 bg-gradient-to-b from-[#D991FF] via-[#FE9AFC]/75 to-[#FF4FFB]/75 px-10 py-6 text-2xl font-extrabold tracking-wide text-white shadow-[0_0_30px_rgba(217,145,255,0.8)] transition-transform duration-200 hover:scale-[1.03] max-sm:px-6 max-sm:py-4 max-sm:text-base text-center'
+          >
+            REGISTER
+            <br />
+            HERE
+          </a>
         </div>
       </div>
     </section>
