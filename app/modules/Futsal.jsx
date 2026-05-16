@@ -26,9 +26,11 @@ const getCountdown = () => {
 }
 
 const Futsal = () => {
+  const [hasMounted, setHasMounted] = useState(false)
   const [countdown, setCountdown] = useState(getCountdown())
 
   useEffect(() => {
+    setHasMounted(true)
     const timerId = setInterval(() => {
       setCountdown(getCountdown())
     }, 1000)
@@ -37,10 +39,19 @@ const Futsal = () => {
   }, [])
 
   const timeBlocks = [
-    { label: 'DAY', value: String(countdown.days) },
-    { label: 'HOUR', value: String(countdown.hours).padStart(2, '0') },
-    { label: 'MINUTES', value: String(countdown.minutes).padStart(2, '0') },
-    { label: 'SECONDS', value: String(countdown.seconds).padStart(2, '0') },
+    { label: 'DAY', value: hasMounted ? String(countdown.days) : '00' },
+    {
+      label: 'HOUR',
+      value: hasMounted ? String(countdown.hours).padStart(2, '0') : '00',
+    },
+    {
+      label: 'MINUTES',
+      value: hasMounted ? String(countdown.minutes).padStart(2, '0') : '00',
+    },
+    {
+      label: 'SECONDS',
+      value: hasMounted ? String(countdown.seconds).padStart(2, '0') : '00',
+    },
   ]
 
   return (
