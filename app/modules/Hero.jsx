@@ -9,6 +9,7 @@ import frame2 from '../../public/webp/Frame2.svg'
 import bintang1 from '../../public/webp/bintang1.webp'
 import bintang2 from '../../public/webp/bintang2.webp'
 import roket from '../../public/webp/roket.svg'
+import rasi from '../../public/webp/rasi.svg'
 
 const Hero = () => {
   return (
@@ -20,15 +21,16 @@ const Hero = () => {
         <Image src={gunungl} width={350} alt="Gunung Kiri" className='absolute bottom-20 left-0 z-1 max-lg:h-auto max-lg:w-[320px] max-sm:w-[180px] max-sm:top-32 max-lg:top-42' />
         <Image src={gunungr} width={350} alt="Gunung Kanan" className='absolute bottom-22 right-0 z-1 max-lg:h-auto max-lg:w-[320px] max-lg:top-42 max-sm:w-[180px] max-sm:top-32' />
         <Image src={frame2} alt="Frame 2" className='absolute bottom-0 translate-y-[77%] z-10 w-screen max-sm:bottom-0 max-sm:translate-y-[77%] max-sm:scale-[200%] max-sm:w-auto max-lg:bottom-0 max-lg:translate-y-[64%]' />
-        <Image src={bintang1} alt="Bintang 1" className='absolute top-10 left-10 z-999 blur-[1px] max-sm:scale-75' />
-        <Image src={bintang1} alt="Bintang 1" className='absolute top-0 left-[30%] z-999 blur-[1px] scale-[500%] max-lg:scale-[300%] max-sm:scale-[180%]' />
-        <Image src={bintang1} alt="Bintang 1" className='absolute top-[29%] left-[1%] z-999 blur-[1px] scale-[300%] max-lg:scale-[200%] max-sm:scale-100' />
-        <Image src={bintang2} alt="Bintang 2" className='absolute top-[6%] right-[40%] z-999 blur-[4px] max-sm:scale-75' />
-        <Image src={bintang1} alt="Bintang 1" className='absolute top-[14%] right-[4%] z-999 blur-[1px] max-sm:scale-75' />
-        <Image src={bintang1} alt="Bintang 1" className='absolute top-[16%] right-[20%] z-999 blur-[2px] max-sm:scale-75' />
-        <Image src={bintang2} alt="Bintang 2" className='absolute bottom-[12%] right-[8%] z-999 blur-[2px] max-sm:scale-75' />
-        <Image src={bintang2} alt="Bintang 2" className='absolute bottom-[4%] right-[38%] z-999 blur-[5px] scale-40 max-sm:scale-[25%]' />
-        <Image src={roket} alt="Roket" className='absolute bottom-[-60%] left-[34%] z-999 max-sm:scale-45 max-sm:left-[2%] max-sm:bottom-[-10%] max-lg:left-[20%] max-lg:bottom-[-15%]' />
+        <Image src={bintang1} alt="Bintang 1" className='absolute top-10 left-10 z-999 blur-[1px] max-lg:top-6 max-lg:left-6 max-sm:top-4 max-sm:left-4 max-sm:scale-75' />
+        <Image src={bintang1} alt="Bintang 1" className='absolute top-0 left-[30%] z-999 blur-[1px] scale-[500%] max-lg:top-2 max-lg:left-[35%] max-lg:scale-[300%] max-sm:top-6 max-sm:left-[40%] max-sm:scale-[180%]' />
+        <Image src={bintang1} alt="Bintang 1" className='absolute top-[29%] left-[1%] z-999 blur-[1px] scale-[300%] max-lg:top-[24%] max-lg:left-[2%] max-lg:scale-[200%] max-sm:top-[22%] max-sm:left-[4%] max-sm:scale-100' />
+        <Image src={bintang2} alt="Bintang 2" className='absolute top-[6%] right-[40%] z-999 blur-[4px] max-lg:top-[8%] max-lg:right-[32%] max-sm:top-[12%] max-sm:right-[22%] max-sm:scale-75' />
+        <Image src={bintang1} alt="Bintang 1" className='absolute top-[14%] right-[4%] z-999 blur-[1px] max-lg:top-[16%] max-lg:right-[6%] max-sm:top-[18%] max-sm:right-[8%] max-sm:scale-75' />
+        <Image src={bintang1} alt="Bintang 1" className='absolute top-[16%] right-[20%] z-999 blur-[2px] max-lg:top-[20%] max-lg:right-[24%] max-sm:top-[24%] max-sm:right-[28%] max-sm:scale-75' />
+        <Image src={bintang2} alt="Bintang 2" className='absolute bottom-[12%] right-[8%] z-999 blur-[2px] max-lg:bottom-[16%] max-lg:right-[10%] max-sm:bottom-[22%] max-sm:right-[14%] max-sm:scale-75' />
+        <Image src={bintang2} alt="Bintang 2" className='absolute bottom-[4%] right-[38%] z-999 blur-[5px] scale-40 max-lg:bottom-[8%] max-lg:right-[32%] max-sm:bottom-[24%] max-sm:left-[26%] max-sm:scale-[25%]' />
+        <Image src={rasi} alt="rasi" className='absolute bottom-0 translate-y-[150%] left-0 z-999 max-lg:scale-80 max-sm:scale-60 max-sm:translate-y-[30%] max-sm:left-[-40%] max-lg:left-[-10%] max-lg:translate-y-[120%]' />
+        <Image src={roket} alt="Roket" className='absolute bottom-0 translate-y-[80%] left-[34%] z-999 max-sm:translate-y-0 max-lg:translate-y-0 max-sm:scale-45 max-sm:left-[2%] max-sm:bottom-[-10%] max-lg:left-[20%] max-lg:bottom-[-15%]' />
     </div>
   )
 }

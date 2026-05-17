@@ -11,7 +11,7 @@ import gununglari from '../../public/webp/gununglari.svg'
 const Funrun = () => {
   return (
     <section className='relative mt-[16%] max-sm:mt-0 max-lg:mt-[0%] bg-[#422351] min-h-screen w-full overflow-x-clip'>
-      <div className='absolute left-[15%] top-[30%] z-1 w-[120%] h-[100%] max-sm:h-[60%] max-sm:top-[0%] max-sm:translate-y-[-4%] bg-[#FFA2D7] rounded-[50%] blur-[150px] max-sm:blur-[100px]' />
+      <div className='absolute left-[15%] top-[24%] z-1 w-[120%] h-[80%] max-sm:h-[60%] max-sm:top-[0%] max-lg:top-[12%] max-lg:h-[70%] max-sm:translate-y-[-4%] bg-[#FFA2D7] rounded-[50%] blur-[150px] max-sm:blur-[100px]' />
 
       <Image src={bintang1} alt="" aria-hidden className='absolute top-[6%] left-[8%] z-10 scale-75 blur-[1px] max-sm:scale-50' />
       <Image src={bintang2} alt="" aria-hidden className='absolute top-[10%] left-[30%] z-10 scale-[1.6] blur-[2px] max-sm:scale-100' />
@@ -48,7 +48,7 @@ const Funrun = () => {
       <Image
         src={frame3}
         alt="Frame 3"
-        className='absolute top-0 translate-y-[-14%] left-0 z-1 w-screen h-auto max-sm:translate-y-[-26%] max-sm:scale-120 max-lg:translate-y-[-36%]'
+        className='absolute top-0 translate-y-[-22%] left-0 z-1 w-screen scale-y-90 h-auto max-sm:translate-y-[-26%] max-sm:scale-120 max-lg:translate-y-[-36%]'
       />
 
       <div className='relative z-20 flex min-h-screen flex-col items-center justify-start gap-6 px-6 pt-20 max-sm:pt-0 max-lg:pt-0 max-sm:gap-4 max-sm:px-4'>
@@ -66,7 +66,9 @@ const Funrun = () => {
         <div className='flex w-full max-w-[820px] px-20 py-10 rounded-2xl backdrop-blur-xs shadow-lg bg-[#BE3A85]/50 border-[0.5px] border-[#BE3A85] items-start justify-center gap-8 max-sm:max-w-[300px] max-sm:gap-2 max-sm:px-4 max-sm:py-5'>
           {['DAY', 'HOUR', 'MINUTES', 'SECONDS'].map((label) => (
             <div key={label} className='flex flex-1 flex-col items-center gap-2 max-sm:gap-1'>
-              <div className='aspect-square w-full rounded-2xl bg-[#F1D6FF] max-sm:rounded-xl' />
+              <div className='flex aspect-square w-full items-center justify-center rounded-2xl bg-[#F1D6FF] max-sm:rounded-xl'>
+                <span className='text-4xl font-extrabold text-[#5C2D68] max-lg:text-3xl max-sm:text-lg'>--</span>
+              </div>
               <span className='text-2xl font-bold tracking-wide text-white max-lg:text-sm max-sm:text-[9px] max-sm:whitespace-nowrap max-sm:tracking-tight'>
                 {label}
               </span>
