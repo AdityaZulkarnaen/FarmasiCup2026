@@ -13,7 +13,7 @@ import rasi from '../../public/webp/rasi.svg'
 
 const Hero = () => {
   return (
-    <div className='relative bg-[#422351] h-screen flex items-center justify-center overflow-x-clip'>
+    <div className='relative h-screen flex items-center justify-center overflow-x-clip'>
         <div className='w-[75%] h-[88.5%] bg-[#BE3A85] rounded-[50%] absolute top-40 blur-[125px] z-5 max-lg:w-[90%] max-lg:h-[60%] max-lg:blur-[90px] max-sm:blur-[70px] max-sm:w-[90%] max-sm:h-[60%]'></div>
         <Image src={fasi} width={420} alt="Fasi" className='absolute top-25 left-10 z-999 rotate-345 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-60 max-lg:left-2 max-lg:rotate-30 max-sm:w-[140px] max-sm:top-50 max-sm:rotate-30 max-sm:left-0' />
         <Image src={Title} alt="Title" className='flex z-999 scale-40 max-lg:scale-[60%] max-sm:scale-[80%]' />
@@ -30,7 +30,7 @@ const Hero = () => {
         <Image src={bintang2} alt="Bintang 2" className='absolute bottom-[12%] right-[8%] z-999 blur-[2px] max-lg:bottom-[16%] max-lg:right-[10%] max-sm:bottom-[22%] max-sm:right-[14%] max-sm:scale-75' />
         <Image src={bintang2} alt="Bintang 2" className='absolute bottom-[4%] right-[38%] z-999 blur-[5px] scale-40 max-lg:bottom-[8%] max-lg:right-[32%] max-sm:bottom-[24%] max-sm:left-[26%] max-sm:scale-[25%]' />
         <Image src={rasi} alt="rasi" className='absolute bottom-0 translate-y-[150%] left-0 z-999 max-lg:scale-80 max-sm:scale-60 max-sm:translate-y-[30%] max-sm:left-[-40%] max-lg:left-[-10%] max-lg:translate-y-[120%]' />
-        <Image src={roket} alt="Roket" className='absolute bottom-0 translate-y-[80%] left-[34%] z-999 max-sm:translate-y-0 max-lg:translate-y-0 max-sm:scale-45 max-sm:left-[2%] max-sm:bottom-[-10%] max-lg:left-[20%] max-lg:bottom-[-15%]' />
+        <Image src={roket} alt="Roket" className='absolute bottom-0 translate-y-[80%] left-[34%] z-999 max-sm:translate-y-0 max-lg:translate-y-0 max-sm:scale-45 max-sm:left-[2%] max-sm:bottom-[-10%] max-lg:left-[20%] max-lg:bottom-[-15%] max-lg:scale-75' />
     </div>
   )
 }
