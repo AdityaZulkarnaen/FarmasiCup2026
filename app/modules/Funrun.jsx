@@ -66,7 +66,9 @@ const Funrun = () => {
         <div className='flex w-full max-w-[820px] px-20 py-10 rounded-2xl backdrop-blur-xs shadow-lg bg-[#BE3A85]/50 border-[0.5px] border-[#BE3A85] items-start justify-center gap-8 max-sm:max-w-[300px] max-sm:gap-2 max-sm:px-4 max-sm:py-5'>
           {['DAY', 'HOUR', 'MINUTES', 'SECONDS'].map((label) => (
             <div key={label} className='flex flex-1 flex-col items-center gap-2 max-sm:gap-1'>
-              <div className='aspect-square w-full rounded-2xl bg-[#F1D6FF] max-sm:rounded-xl' />
+              <div className='flex aspect-square w-full items-center justify-center rounded-2xl bg-[#F1D6FF] max-sm:rounded-xl'>
+                <span className='text-4xl font-extrabold text-[#5C2D68] max-lg:text-3xl max-sm:text-lg'>--</span>
+              </div>
               <span className='text-2xl font-bold tracking-wide text-white max-lg:text-sm max-sm:text-[9px] max-sm:whitespace-nowrap max-sm:tracking-tight'>
                 {label}
               </span>
