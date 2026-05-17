@@ -7,10 +7,26 @@ import kuning from '../../public/webp/kuning.webp'
 import bggs from '../../public/webp/bggs.webp'
 import perunggu from '../../public/webp/perunggu.webp'
 import festrona from '../../public/webp/festrona.webp'
+import bintang1 from '../../public/webp/bintang1.webp'
+import bintang2 from '../../public/webp/bintang2.webp'
+import rasi1 from '../../public/webp/rasi1.svg'
 
 const Gueststar = () => {
   return (
     <section className='relative flex min-h-screen w-full flex-col items-center px-6 pb-20 pt-40 max-sm:pt-0 max-sm:px-4 overflow-x-clip '>
+        {/* <Image src={rasi1} alt="" aria-hidden className='absolute top-[10%] right-0 z-20 max-sm:scale-50' /> */}
+      <Image src={bintang1} alt="" aria-hidden className='absolute top-[6%] left-[8%] z-20 scale-75 blur-[1px] max-sm:scale-50' />
+      <Image src={bintang1} alt="" aria-hidden className='absolute top-[19%] left-[8%] z-20 scale-[1.6] blur-[1px] max-sm:scale-100' />
+      <Image src={bintang1} alt="" aria-hidden className='absolute top-[4%] right-[18%] z-20 scale-[2.1] blur-[1px] max-sm:scale-125' />
+      <Image src={bintang2} alt="" aria-hidden className='absolute top-[24%] right-[6%] z-20 scale-90 blur-[3px] max-sm:scale-50' />
+      <Image src={bintang1} alt="" aria-hidden className='absolute top-[40%] left-[4%] z-20 scale-[1.2] blur-[1px] max-sm:scale-75' />
+      <Image src={bintang1} alt="" aria-hidden className='absolute top-[52%] left-[26%] z-20 scale-[0.7] blur-[2px] max-sm:scale-[0.5]' />
+      <Image src={bintang1} alt="" aria-hidden className='absolute top-[48%] right-[2%] z-20 scale-[1.7] blur-[2px] max-sm:scale-100' />
+      <Image src={bintang1} alt="" aria-hidden className='absolute bottom-[18%] left-[12%] z-20 scale-[7.2] blur-[1px] max-sm:scale-125' />
+      <Image src={bintang1} alt="" aria-hidden className='absolute bottom-[10%] right-[10%] z-20 scale-[0.7] blur-[1px] max-sm:scale-50' />
+      {/* <Image src={bintang2} alt="" aria-hidden className='absolute top-[20%] right-[32%] z-20 scale-[0.9] blur-[3px] max-sm:scale-75' /> */}
+      <Image src={bintang2} alt="" aria-hidden className='absolute top-[58%] left-[34%] z-2 scale-[0.6] blur-[2px] max-sm:scale-[0.4]' />
+      <Image src={bintang2} alt="" aria-hidden className='absolute bottom-[30%] right-[2%] z-20 scale-[1.1] blur-[2px] max-sm:scale-75' />
       <Image
         src={gununggs}
         alt='Gunung Guest Star'
