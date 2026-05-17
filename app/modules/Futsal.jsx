@@ -56,7 +56,7 @@ const Futsal = () => {
 
   return (
     
-    <section className='relative mt-[28%] max-sm:mt-[10%] bg-[#422351] min-h-screen w-full overflow-x-clip'>
+    <section className='relative mt-[28%] max-sm:mt-[10%] min-h-screen w-full overflow-x-clip'>
       {/* center glow, continuing the hero vibe*/}
       <div className='absolute left-[40%] top-0 z-10  w-[70%] h-[100%] bg-[#9442EF]/50 rounded-[50%] blur-[140px] max-sm:blur-[90px]' /> 
 
