@@ -73,14 +73,14 @@ const Konser = () => {
             <Image src={bintang2} alt="" aria-hidden className='absolute top-[58%] left-[34%] z-20 scale-[0.6] blur-[2px] max-sm:scale-[0.4]' />
             <Image src={bintang2} alt="" aria-hidden className='absolute bottom-[30%] right-[2%] z-20 scale-[1.1] blur-[2px] max-sm:scale-75' />
 
-            <Image src={gunung} alt="Gunung" className='absolute left-0 top-0 translate-y-[-24%] z-1 w-[100%] scale-y-90 max-sm:h-[60%] max-sm:top-[0%] max-lg:top-[12%] max-lg:h-[70%] max-sm:translate-y-[-4%]' />
+            <Image src={gunung} alt="Gunung" className='absolute left-0 top-0 translate-y-[-24%] z-1 w-[100%] scale-y-90 max-sm:w-[100%] max-sm:top-[0%] max-lg:top-0 max-lg:translate-y-[-30%] max-lg:scale-y-110 max-lg:h-[70%] max-sm:translate-y-[-45%] max-sm:scale-y-150' />
             <Image src={indie} alt="Indie" className='relative z-20 w-[600px] h-auto max-lg:w-[320px] max-sm:w-[220px]' />
             <Image src={festrona} alt="Festrona" className='relative z-20 w-[480px] h-auto max-lg:w-[320px] max-sm:w-[220px]' />
             <Image src={cupikonser} alt="Cupikonser" className='absolute top-[26%] right-[6%] z-20 w-[300px] h-auto max-lg:w-[200px] max-lg:top-[0%] max-sm:w-[140px] max-sm:top-[1%] max-sm:right-[-8%]' />
             <Image src={fasikonser} alt="Fasikonser" className='absolute top-[26%] left-[6%] z-20 w-[300px] h-auto max-lg:w-[200px] max-lg:top-[0%] max-sm:w-[140px] max-sm:top-[1%] max-sm:left-[-8%]' />
-            <Image src={frame4} alt="Frame 4" className='absolute top-[14%] translate-y-[-22%] left-0 z-5 w-screen scale-y-80 h-auto max-sm:translate-y-[-26%] max-sm:scale-120 max-lg:translate-y-[-36%]' />
+            <Image src={frame4} alt="Frame 4" className='absolute top-[14%] translate-y-[-22%] max-lg:scale-y-110 max-lg:top-[16%] max-sm:scale-y-140 left-0 z-5 w-screen scale-y-80 h-auto max-sm:translate-y-[-26%]  max-lg:translate-y-[-36%]' />
 
-            <div className='relative z-20 flex min-h-screen flex-col items-center justify-start gap-6 px-6 pt-20 max-sm:pt-0 max-lg:pt-0 max-sm:gap-4 max-sm:px-4'>
+            <div className='relative z-20 flex min-h-screen flex-col items-center justify-start gap-6 px-6 pt-20 max-sm:pt-4 max-lg:pt-4 max-sm:gap-4 max-sm:px-4'>
                 <div className='flex w-full max-w-[420px] items-center justify-center rounded-[3.5rem] bg-gradient-to-b from-[#BE3A85]/50 to-[#FFA9FE]/50 px-0 py-3 backdrop-blur-md border-[0.5px] border-[#F2C2FF] max-sm:max-w-[300px] max-sm:rounded-3xl max-sm:px-6 max-sm:py-4'>
                     <h2 className='text-center text-5xl font-extrabold leading-tight tracking-wide text-white max-lg:text-4xl max-sm:text-2xl'>
                         Concert
