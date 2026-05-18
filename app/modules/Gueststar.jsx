@@ -38,7 +38,7 @@ const Gueststar = () => {
         className='absolute top-[28%] scale-y-105 w-screen z-6 h-auto max-sm:top-0  max-sm:translate-y-[220%] max-sm:scale-y-300 max-sm:scale-x-150 max-lg:scale-y-200 max-lg:translate-y-[-10%] max-lg:scale-x-150 '
       />
 
-      <Image src={bggs} alt='Concert Venue Layout' fill className='absolute bottom-0 translate-y-[38%] w-screen z-7 h-auto max-sm:translate-y-[36%] max-sm:scale-y-130 max-sm:left-[10%] max-lg:translate-y-[23%]' />
+      <Image src={bggs} alt='Concert Venue Layout' fill className='absolute bottom-0 translate-y-[32%] scale-y-85 w-screen z-7 h-auto max-sm:translate-y-[36%] max-sm:scale-y-130 max-sm:left-[10%] max-lg:translate-y-[20%] max-lg:scale-y-90' />
 
       <div className='relative z-10 mt-10 max-sm:mt-30 flex w-full max-w-[520px] items-center justify-center '>
         <Image
