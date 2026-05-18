@@ -10,6 +10,7 @@ import festrona from '../../public/webp/festrona.webp'
 import bintang1 from '../../public/webp/bintang1.webp'
 import bintang2 from '../../public/webp/bintang2.webp'
 import rasi1 from '../../public/webp/rasi1.svg'
+import venue from '../../public/webp/venue.webp'
 
 const Gueststar = () => {
   return (
@@ -22,7 +23,7 @@ const Gueststar = () => {
       <Image src={bintang1} alt="" aria-hidden className='absolute top-[40%] left-[4%] z-20 scale-[1.2] blur-[1px] max-sm:scale-75' />
       <Image src={bintang1} alt="" aria-hidden className='absolute top-[52%] left-[26%] z-20 scale-[0.7] blur-[2px] max-sm:scale-[0.5]' />
       <Image src={bintang1} alt="" aria-hidden className='absolute top-[48%] right-[2%] z-20 scale-[1.7] blur-[2px] max-sm:scale-100' />
-      <Image src={bintang1} alt="" aria-hidden className='absolute bottom-[18%] left-[12%] z-20 scale-[7.2] blur-[1px] max-sm:scale-125' />
+      {/* <Image src={bintang1} alt="" aria-hidden className='absolute bottom-[18%] left-[12%] z-20 scale-[7.2] blur-[1px] max-sm:scale-125' /> */}
       <Image src={bintang1} alt="" aria-hidden className='absolute bottom-[10%] right-[10%] z-20 scale-[0.7] blur-[1px] max-sm:scale-50' />
       {/* <Image src={bintang2} alt="" aria-hidden className='absolute top-[20%] right-[32%] z-20 scale-[0.9] blur-[3px] max-sm:scale-75' /> */}
       <Image src={bintang2} alt="" aria-hidden className='absolute top-[58%] left-[34%] z-2 scale-[0.6] blur-[2px] max-sm:scale-[0.4]' />
@@ -88,7 +89,7 @@ const Gueststar = () => {
       </div>
 
       <span className='relative z-10 mt-10 text-4xl max-sm:text-lg max-sm:mt-4 font-semibold italic text-white/80'>
-        TO BE ANNOUNCED
+        MORE TO BE ANNOUNCED
       </span>
 
       <div className='relative z-10 mt-20 max-lg: flex w-full flex-col items-center'>
@@ -98,8 +99,12 @@ const Gueststar = () => {
             <span className='hidden max-sm:block max-sm:whitespace-nowrap'>LAYOUT VENUE</span>
             <span className='block max-sm:hidden'>VENUE LAYOUT</span>
           </div>
-          <div className='w-full max-w-[760px] aspect-[19/14] rounded-[22px] bg-gradient-to-b from-[#FFEE2E] to-[#E7654D] shadow-[0_12px_28px_rgba(0,0,0,0.25)] max-sm:w-[90%] text-center text-4xl font-extrabold tracking-wide flex justify-center items-center' >
-            TO BE ANNOUNCED
+          <div className='w-full max-w-[760px] aspect-[19/14] rounded-[22px] max-sm:w-[90%] flex justify-center items-center overflow-hidden' >
+            <Image
+              src={venue}
+              alt='Concert Venue Layout'
+              className='w-full h-auto'
+            />
           </div>
         </div>
       </div>
