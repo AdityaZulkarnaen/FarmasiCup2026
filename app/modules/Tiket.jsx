@@ -17,6 +17,14 @@ import yt from '../../public/webp/yt.svg'
 const Tiket = () => {
     return (
         <section className='relative bg-linear-to-b from-[#D25A4F] to-[#F56C4A] flex min-h-screen w-full flex-col items-center px-6 pb-[15%] pt-40 max-sm:pt-0 max-sm:px-4 overflow-x-clip '>
+            <Image src={bintang1} alt='' aria-hidden className='absolute top-[6%] left-[6%] z-10 scale-[1.1] blur-[1px] max-sm:scale-75' />
+            <Image src={bintang1} alt='' aria-hidden className='absolute top-[10%] right-[14%] z-10 scale-[1.6] blur-[1px] max-sm:scale-90' />
+            <Image src={bintang1} alt='' aria-hidden className='absolute top-[22%] left-[18%] z-10 scale-[0.9] blur-[2px] max-sm:scale-75' />
+            <Image src={bintang1} alt='' aria-hidden className='absolute top-[34%] right-[6%] z-10 scale-[1.3] blur-[1px] max-sm:scale-90' />
+            <Image src={bintang1} alt='' aria-hidden className='absolute top-[46%] left-[4%] z-10 scale-[1.8] blur-[1px] max-sm:scale-100' />
+            <Image src={bintang1} alt='' aria-hidden className='absolute bottom-[28%] right-[12%] z-10 scale-[1.2] blur-[2px] max-sm:scale-90' />
+            <Image src={bintang2} alt='' aria-hidden className='absolute top-[18%] right-[30%] z-10 scale-[0.7] blur-[2px] max-sm:scale-50' />
+            <Image src={bintang2} alt='' aria-hidden className='absolute bottom-[18%] left-[22%] z-10 scale-[0.9] blur-[2px] max-sm:scale-60' />
             <Image src={festrona} alt="Festrona" className='absolute top-0 translate-y-[-34%] right-[2%] z-7 w-[600px] h-auto max-lg:w-[320px] max-sm:w-[220px] blur-[4px] max-sm:translate-y-[-55%] max-sm:right-[-5%]' />
             <div className=' rounded-full z-20 bg-[#BE3A7A]/13 border-[2px] border-[#FFFFFF] px-[10%] py-4 backdrop-blur-xs text-center text-8xl font-extrabold tracking-wide max-sm:px-12 max-sm:py-2 text-white shadow-[0_8px_20px_rgba(0,0,0,0.2)] max-sm:text-xl max-lg:text-4xl'>
                 CONCERT
