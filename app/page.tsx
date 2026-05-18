@@ -3,6 +3,7 @@ import Futsal from "./modules/Futsal";
 import Funrun from "./modules/Funrun";
 import Konser from "./modules/Konser";
 import Gueststar from "./modules/Gueststar";
+import Tiket from "./modules/Tiket";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Funrun />
       <Konser />
       <Gueststar />
+      <Tiket />
     </>
   );
 }
