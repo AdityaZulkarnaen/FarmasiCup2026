@@ -87,7 +87,7 @@ const Tiket = () => {
                 </a>
                 <div className='relative flex w-full justify-center'>
                     
-                    <div className='pointer absolute bottom-0 translate-y-[680%] max-sm:translate-y-[380%] max-lg:translate-y-[240%] flex items-center justify-center'>
+                    <div className='pointer absolute bottom-0 translate-y-[680%] max-sm:translate-y-[320%] max-lg:translate-y-[240%] flex items-center justify-center'>
                         <div className='pointer-events-auto flex items-center gap-6 max-sm:gap-3'>
                             <a
                                 href='https://www.instagram.com/farmasicup?igsh=MW0yaXZ6YjlleXFlZA=='
