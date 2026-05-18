@@ -7,7 +7,13 @@ const montserrat = Montserrat({
   subsets: ["latin"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL?.replace(/\/$/, "") ??
+  "https://farmasicup.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
+  alternates: { canonical: "/" },
   title: "Farmasi Cup 2026",
   description: "Farmasi Cup: Kompetisi futsal nasional dan event musik tahunan bergengsi di rumpun medika dari Farmasi UGM. Ikuti keseruannya dan daftar sekarang!",
   icons: {
