@@ -32,9 +32,9 @@ const Tiket = () => {
                 TICKET
             </div>
             <Image src={fasi} width={420} alt="Fasi" className='absolute top-[5%] left-[7%] z-21 rotate-345 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-30 max-lg:left-2 max-lg:rotate-30 max-sm:w-[140px] max-sm:top-0 max-sm:translate-y-[-10%] max-sm:rotate-30 max-sm:left-[-3%]' />
-            <Image src={cupi} width={420} alt="Cupi" className='absolute top-[5%] right-[7%] z-21 rotate-15 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-[75%] max-sm:w-[140px] max-sm:top-[70%] max-sm:top-90 max-sm:right-0' />
+            <Image src={cupi} width={420} alt="Cupi" className='absolute top-[5%] right-[7%] z-21 rotate-15 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-[56%] max-sm:w-[140px] max-sm:top-[50%] max-sm:right-0' />
             <Image src={bgtiket} alt="Background Tiket" className='absolute top-[12%] scale-y-110 z-1 w-screen h-auto max-sm:top-[50%] max-sm:translate-y-[-50%] max-lg:hidden max-lg:translate-y-[-50%] max-sm:hidden' />
-            <Image src={gunungtiket} alt="Gunung Tiket" className='absolute top-0 translate-y-[67%] z-1 w-screen h-auto max-sm:top-[55%] max-sm:scale-y-100 max-sm:left-[0%] max-lg:translate-y-[130%] max-sm:translate-y-[50%] max-lg:scale-y-120' />
+            <Image src={gunungtiket} alt="Gunung Tiket" className='absolute top-0 translate-y-[96%] z-1 w-screen h-auto max-sm:top-[70%] max-sm:scale-y-100 max-sm:left-[0%] max-lg:translate-y-[200%] max-sm:translate-y-[50%] max-lg:scale-y-120' />
             {/* <Image src={gunungfooter} alt="Gunung Footer" className='absolute bottom-[6%] left-0 z-23 opacity-40 scale-y-80 w-screen h-auto max-sm:scale-y-130' /> */}
             <Image
                         src={footer}
@@ -85,6 +85,31 @@ const Tiket = () => {
                         TICKETS!
                     </span>
                 </a>
+                <div className='mx-auto w-fit rounded-[26px] border-2 border-white/70 bg-white/15 px-8 py-6 text-center text-white shadow-[0_12px_28px_rgba(0,0,0,0.2)] backdrop-blur-md max-sm:px-4 max-sm:py-4'>
+                    <h3 className='text-3xl font-extrabold tracking-wide max-sm:text-lg'>CONTACT PERSON</h3>
+                    <div className='mt-4 grid gap-4 text-lg font-semibold max-sm:text-sm'>
+                        <div>
+                            CP Media Partner Medsos
+                            <br />
+                            <span className='text-white/95'>081228360047 (Sevin)</span>
+                        </div>
+                        <div>
+                            CP Media Partner TV, Website, Koran, &amp; Radio
+                            <br />
+                            <span className='text-white/95'>081294293307 (Tika)</span>
+                        </div>
+                        <div>
+                            CP Sponsor
+                            <br />
+                            <span className='text-white/95'>081218191374 (Kifa)</span>
+                        </div>
+                        <div>
+                            CP Ticketing
+                            <br />
+                            <span className='text-white/95'>081225819546 (Nadia)</span>
+                        </div>
+                    </div>
+                </div>
                 <div className='relative flex w-full justify-center'>
                     
                     <div className='pointer absolute bottom-0 translate-y-[680%] max-sm:translate-y-[320%] max-lg:translate-y-[240%] flex items-center justify-center'>
