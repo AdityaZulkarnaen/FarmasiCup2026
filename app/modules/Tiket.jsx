@@ -50,7 +50,7 @@ const Tiket = () => {
                             <span className='text-9xl font-extrabold max-lg:text-5xl max-sm:text-3xl'>1</span>
                         </div>
                         <div className='text-4xl font-extrabold uppercase max-lg:bg-gradient-to-b max-lg:from-[#963424] max-lg:to-[#BE3A85] max-lg:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-lg:rounded-lg max-lg:text-white/90 max-lg:flex max-lg:w-[20%] max-lg:items-center max-lg:justify-center max-lg:text-xs max-sm:bg-gradient-to-b max-sm:from-[#963424] max-sm:to-[#BE3A85] max-sm:shadow-[0_10px_24px_rgba(0,0,0,0.25)] max-sm:rounded-lg text-white/90 max-sm:flex max-sm:w-[20%] max-sm:items-center max-sm:justify-center max-sm:text-xs'>
-                            <span className='max-lg:rotate-90 max-sm:rotate-90 max-sm:text-[14px] max-lg:text-2xl'>ON SALE</span>
+                            <span className='max-lg:rotate-90 max-sm:rotate-90 max-sm:text-[14px] max-lg:text-2xl text-6xl tracking-widest'>129K</span>
                         </div>
                     </div>
                     <div className='flex flex-col items-center gap-3 max-lg:w-full max-lg:flex-row max-lg:items-stretch max-lg:gap-3 max-sm:w-full max-sm:flex-row max-sm:items-stretch max-sm:gap-3'>
