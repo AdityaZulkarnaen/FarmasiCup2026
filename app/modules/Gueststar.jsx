@@ -5,7 +5,7 @@ import fasihead from '../../public/webp/fasihead.webp'
 import cupihead from '../../public/webp/cupihead.webp'
 import kuning from '../../public/webp/kuning.webp'
 import bggs from '../../public/webp/bggs.webp'
-import perunggu from '../../public/webp/perunggu.webp'
+import gs1 from '../../public/webp/gs1.webp'
 import festrona from '../../public/webp/festrona.webp'
 import bintang1 from '../../public/webp/bintang1.webp'
 import bintang2 from '../../public/webp/bintang2.webp'
@@ -62,7 +62,14 @@ const Gueststar = () => {
       
 
       <div className='relative z-10 mt-[10%] max-sm:mt-[20%] flex w-full flex-wrap items-center justify-center gap-8 max-sm:gap-3'>
-        {[0, 1, 2, 3].map((index) => (
+        <Image
+          src={gs1}
+          alt='Guest Star'
+          width={600}
+          height={800}
+          className='h-auto w-[28%] max-h-[55vh] max-lg:w-[45%] max-lg:max-h-[40vh] max-sm:w-[65%] max-sm:max-h-[35vh]'
+        />
+        {/* {[0, 1, 2, 3].map((index) => (
           <div
             key={index}
             className={
@@ -85,7 +92,7 @@ const Gueststar = () => {
               </span>
             )}
           </div>
-        ))}
+        ))} */}
       </div>
 
       <span className='relative z-10 mt-10 text-4xl max-sm:text-lg max-sm:mt-4 font-semibold italic text-white/80'>
