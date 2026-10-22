@@ -13,6 +13,46 @@ import ig from '../../public/webp/ig.svg'
 import tiktok from '../../public/webp/tiktok.svg'
 import x from '../../public/webp/x.svg'
 import yt from '../../public/webp/yt.svg'
+import vidio from '../../public/sponsor/logo/vidio.webp'
+import yup from '../../public/sponsor/logo/yup.webp'
+import grab from '../../public/sponsor/logo/grab.webp'
+import cheers from '../../public/sponsor/logo/cheers.webp'
+import fresh from '../../public/sponsor/logo/fresh.webp'
+import bangos from '../../public/sponsor/logo/bangos.webp'
+import bsm from '../../public/sponsor/logo/bsm.webp'
+import dunia from '../../public/sponsor/logo/dunia.webp'
+import imp from '../../public/sponsor/logo/imp.webp'
+import jogmed from '../../public/sponsor/logo/jogmed.webp'
+import kopken from '../../public/sponsor/logo/kopken.webp'
+import tavi from '../../public/sponsor/logo/tavi.webp'
+import kimiafarma from '../../public/sponsor/logo/kimiafarma.webp'
+import madu from '../../public/sponsor/logo/madu.webp'
+import mizone from '../../public/sponsor/logo/mizone.webp'
+import supermatchy from '../../public/sponsor/logo/supermatchy.webp'
+
+// Logos sit on white cards so their mixed backgrounds (transparent, white, dark) look uniform
+const MAIN_SPONSORS = [
+    { name: 'Vidio', src: vidio },
+    { name: 'Yup', src: yup },
+    { name: 'Grab', src: grab },
+    { name: "Cheers", src: cheers },
+    { name: 'FreshCare', src: fresh },
+]
+
+const SPONSORS = [
+    { name: 'Kimia Farma', src: kimiafarma },
+    { name: 'Mizone', src: mizone },
+    { name: 'Madu TJ', src: madu },
+    { name: 'Super Matchy Company', src: supermatchy },
+    { name: 'Kopi Kenangan', src: kopken },
+    { name: 'Bangor', src: bangos },
+    { name: 'tavi', src: tavi },
+    { name: 'Imperial Digital Printing', src: imp },
+    { name: 'Multi Souvenir', src: jogmed },
+    { name: 'Dunia & Co Indonesia', src: dunia },
+    // white logo on transparent background, darkened so it shows on the white card
+    { name: 'BSM Rental', src: bsm, className: 'brightness-0' },
+]
 
 const Tiket = () => {
     return (
@@ -33,8 +73,8 @@ const Tiket = () => {
             </div>
             <Image src={fasi} width={420} alt="Fasi" className='absolute top-[5%] left-[7%] z-21 rotate-345 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-30 max-lg:left-2 max-lg:rotate-30 max-sm:w-[140px] max-sm:top-0 max-sm:translate-y-[-10%] max-sm:rotate-30 max-sm:left-[-3%]' />
             <Image src={cupi} width={420} alt="Cupi" className='absolute top-[5%] right-[7%] z-21 rotate-15 drop-shadow-[0_0_25px_rgba(255,255,255,0.7)] max-lg:h-auto max-lg:w-[260px] max-lg:top-[56%] max-sm:w-[140px] max-sm:top-[50%] max-sm:right-0' />
-            <Image src={bgtiket} alt="Background Tiket" className='absolute top-[12%] scale-y-110 z-1 w-screen h-auto max-sm:top-[50%] max-sm:translate-y-[-50%] max-lg:hidden max-lg:translate-y-[-50%] max-sm:hidden' />
-            <Image src={gunungtiket} alt="Gunung Tiket" className='absolute top-0 translate-y-[96%] z-1 w-screen h-auto max-sm:top-[65%] max-sm:scale-y-100 max-sm:left-[0%] max-lg:translate-y-[200%] max-sm:translate-y-[50%] max-lg:scale-y-120' />
+            <Image src={bgtiket} alt="Background Tiket" className='absolute top-[230px] scale-y-110 z-1 w-screen h-auto max-sm:top-[50%] max-sm:translate-y-[-50%] max-lg:hidden max-lg:translate-y-[-50%] max-sm:hidden' />
+            <Image src={gunungtiket} alt="Gunung Tiket" className='absolute bottom-0 translate-y-[2%] z-1 w-screen h-auto max-sm:scale-y-100 max-sm:left-[0%] max-lg:translate-y-[6%] max-sm:translate-y-[4%] max-lg:scale-y-120' />
             {/* <Image src={gunungfooter} alt="Gunung Footer" className='absolute bottom-[6%] left-0 z-23 opacity-40 scale-y-80 w-screen h-auto max-sm:scale-y-130' /> */}
             <Image
                         src={footer}
@@ -98,6 +138,23 @@ const Tiket = () => {
                             <br />
                             <span className='text-white/95'>081225819546 (Nadia)</span>
                         </div>
+                    </div>
+                </div>
+                <div className='mx-auto w-full max-w-[1000px] rounded-[26px] border-2 border-white/70 bg-white/15 px-10 py-8 text-center text-white shadow-[0_12px_28px_rgba(0,0,0,0.2)] backdrop-blur-md max-lg:max-w-[720px] max-lg:px-6 max-sm:px-3 max-sm:py-5'>
+                    <h3 className='text-3xl font-extrabold tracking-wide max-sm:text-lg'>SPONSORED BY</h3>
+                    <div className='mt-6 flex flex-wrap justify-center gap-4 max-lg:gap-3 max-sm:mt-4 max-sm:gap-2'>
+                        {MAIN_SPONSORS.map((sponsor) => (
+                            <div key={sponsor.name} className='flex h-28 w-[calc((100%-4rem)/5)] items-center justify-center rounded-2xl bg-white p-4 shadow-[0_8px_20px_rgba(0,0,0,0.18)] max-lg:h-24 max-lg:w-[calc((100%-1.5rem)/3)] max-sm:h-16 max-sm:w-[calc((100%-1rem)/3)] max-sm:rounded-xl max-sm:p-2'>
+                                <Image src={sponsor.src} alt={sponsor.name} sizes='(max-width: 640px) 110px, 280px' className='h-full w-full object-contain' />
+                            </div>
+                        ))}
+                    </div>
+                    <div className='mt-5 flex flex-wrap justify-center gap-4 max-lg:gap-3 max-sm:mt-2 max-sm:gap-2'>
+                        {SPONSORS.map((sponsor) => (
+                            <div key={sponsor.name} className='flex h-24 w-[calc((100%-3rem)/4)] items-center justify-center rounded-2xl bg-white p-4 shadow-[0_8px_20px_rgba(0,0,0,0.18)] max-lg:h-20 max-lg:w-[calc((100%-2.25rem)/4)] max-lg:p-3 max-sm:h-14 max-sm:w-[calc((100%-1rem)/3)] max-sm:rounded-xl max-sm:p-2'>
+                                <Image src={sponsor.src} alt={sponsor.name} sizes='(max-width: 640px) 100px, 200px' className={`h-full w-full object-contain ${sponsor.className ?? ''}`} />
+                            </div>
+                        ))}
                     </div>
                 </div>
                 <div className='relative flex w-full justify-center'>
