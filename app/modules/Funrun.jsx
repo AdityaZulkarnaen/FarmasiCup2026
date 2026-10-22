@@ -9,6 +9,13 @@ import bintang1 from '../../public/webp/bintang1.webp'
 import bintang2 from '../../public/webp/bintang2.webp'
 import pin from '../../public/webp/pin.webp'
 import gununglari from '../../public/webp/gununglari.svg'
+import peta3k from '../../public/webp/PETA-3K.webp'
+import peta5k from '../../public/webp/PETA-5K.webp'
+
+const ROUTES = [
+  { label: '3K', src: peta3k },
+  { label: '5K', src: peta5k },
+]
 
 const FUN_RUN_DATE = new Date('2026-09-20T00:00:00+07:00')
 
@@ -103,13 +110,21 @@ const Funrun = () => {
           ))}
         </div>
 
-        <div className='mt-4 flex w-full max-w-[920px] items-center justify-center'>
-          <div className='relative w-full max-w-[720px] rounded-[22px] border border-white/20 bg-linear-to-b from-[#E87BD1] to-[#985C97] p-6 shadow-[0_0_40px_rgba(200,116,222,0.45)] backdrop-blur-md max-sm:max-w-[320px]'>
-            <div className='relative h-[600px] overflow-hidden rounded-[18px] flex items-center justify-center max-lg:h-[400px] max-sm:h-[180px]'>
-              <span className='text-4xl text-center font-extrabold tracking-[0.2em] text-white/80 max-lg:text-3xl max-sm:text-2xl'>
-                Route To Be Announced
-              </span>
-            </div>
+        <div className='mt-4 flex w-full max-w-[1040px] items-center justify-center'>
+          <div className='relative grid w-full grid-cols-2 gap-6 rounded-[22px] border border-white/20 bg-linear-to-b from-[#E87BD1] to-[#985C97] p-6 shadow-[0_0_40px_rgba(200,116,222,0.45)] backdrop-blur-md max-lg:max-w-[720px] max-sm:max-w-[320px] max-sm:grid-cols-1 max-sm:gap-5 max-sm:p-4'>
+            {ROUTES.map((route) => (
+              <div key={route.label} className='flex flex-col items-center gap-4 max-sm:gap-3'>
+                <span className='rounded-full bg-[#F1D6FF] px-8 py-1 text-3xl font-extrabold tracking-wide text-[#5C2D68] max-lg:text-2xl max-sm:text-xl'>
+                  {route.label}
+                </span>
+                <Image
+                  src={route.src}
+                  alt={`Rute Fun Run ${route.label}`}
+                  sizes='(max-width: 640px) 290px, (max-width: 1024px) 330px, 480px'
+                  className='h-auto w-full'
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

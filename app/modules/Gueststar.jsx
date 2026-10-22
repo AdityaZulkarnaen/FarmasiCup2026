@@ -7,6 +7,7 @@ import kuning from '../../public/webp/kuning.webp'
 import bggs from '../../public/webp/bggs.webp'
 import gs1 from '../../public/webp/gs1.webp'
 import pamungkas from '../../public/webp/pamungkas.webp'
+import magcel from '../../public/webp/magcel.webp'
 import festrona from '../../public/webp/festrona.webp'
 import bintang1 from '../../public/webp/bintang1.webp'
 import bintang2 from '../../public/webp/bintang2.webp'
@@ -76,6 +77,13 @@ const Gueststar = () => {
           width={600}
           height={800}
           className='h-auto w-[24%] max-h-[55vh] object-contain max-lg:w-[36%] max-lg:max-h-[52vh] max-sm:w-[38%] max-sm:max-h-[45vh]'
+        />
+        <Image
+          src={magcel}
+          alt='Guest Star Magnolia Celebration'
+          width={600}
+          height={800}
+          className='h-auto w-[30%] max-h-[55vh] object-contain max-lg:mt-6 max-lg:w-[62%] max-lg:max-h-[40vh] max-sm:mt-4 max-sm:w-[76%] max-sm:max-h-[30vh]'
         />
         {/* {[0, 1, 2, 3].map((index) => (
           <div
